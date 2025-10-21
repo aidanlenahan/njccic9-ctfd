@@ -274,71 +274,49 @@
   <div class="jumbotron">
     <div class="container">
       <h1>
-        Challenges
+        Login
       </h1>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-8 col offset-md-2 col-lg-6 offset-lg-3">
         <div>
   
 
   
 </div>
-      </div>
-    </div>
 
-    <div 
-      x-data="ChallengeBoard" 
-      @load-challenges.window="loadChallenges()" 
-      @load-challenge.window="loadChallenge($event.detail)"
-    >
-      <div
-          x-ref="challengeWindow" id="challenge-window" class="modal fade" tabindex="-1" role="dialog" x-data=""
-          x-html="$store.challenge.data.view"
-      ></div>
+        
 
-      <div x-show="!loaded">
-        <div class="min-vh-50 d-flex align-items-center">
-          <div class="text-center w-100">
-            <i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
-          </div>
-        </div>
-      </div>
-
-      <div x-show="loaded">
-        <template x-for="(category, idx) in getCategories()" :key="idx">
-          <div class="pt-5">
-            <div class="category-header mb-3">
-              <h3 x-text="category"></h3>
+        
+          <form method="post" accept-charset="utf-8">
+            <div class="mb-3">
+              <b><label class="form-label" for="name">User Name or Email</label></b>
+              <input autocomplete="username email" autofocus class="form-control" id="name" name="name" required type="text" value="">
             </div>
 
-            <div class="category-challenges d-flex flex-column">
-              <div class="challenges-row row">
-                <template x-for="(c, idx) in getChallenges(category)" :key="c.id">
-                  <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                    <button
-                        class="challenge-button btn btn-dark w-100 h-100"
-                        :class="[
-                          c.solved_by_me ? 'challenge-solved' : '',
-                          ...c.tags.map((tag) => `tag-${tag.value.replace(/ /g, '-')}`),
-                        ];"
-                        :value="c.id" @click="loadChallenge(c.id)"
-                    >
+            <div class="mb-3">
+              <b><label class="form-label" for="password">Password</label></b>
+              <input autocomplete="current-password" class="form-control" id="password" name="password" required type="password" value="">
+            </div>
 
-                      <div class="challenge-inner my-3">
-                        <p x-text="c.name"></p>
-                        <span x-text="c.value"></span>
-                      </div>
-                    </button>
-                  </div>
-                </template>
+            <div class="row pt-3">
+              <div class="col-6 col-md-8">
+                <a class="align-middle" href="/reset_password">
+                  Forgot your password?
+                </a>
+              </div>
+
+              <div class="col-6 col-md-4">
+                <input class="btn btn-block btn-primary w-100" id="_submit" name="_submit" type="submit" value="Submit">
               </div>
             </div>
-          </div>
-        </template>
+
+            <input id="nonce" name="nonce" type="hidden" value="4a2766fbb67bb4f43d3a03b3008df8bef8fc24a3502a757baea14b35adba793a">
+          </form>
+        
       </div>
     </div>
   </div>
@@ -392,7 +370,7 @@
 </div>
 
 
-  <script type="module"  src="/themes/core/static/assets/index.b6be5691.js"></script><script type="module"  src="/themes/core/static/assets/challenges.f0f38b54.js"></script>
+  <script type="module"  src="/themes/core/static/assets/index.b6be5691.js"></script><script type="module"  src="/themes/core/static/assets/page.1b85bc2f.js"></script>
 
 
 
