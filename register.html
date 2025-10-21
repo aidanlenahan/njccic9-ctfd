@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Help</title>
+  <title>NJCCIC Group 9</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/files/2b03a356e4585221232b6dab9e2e8a34/favicon-3.png" type="image/x-icon">
@@ -271,19 +271,70 @@
 
 <main role="main">
   
-  <div class="container">
-    <h1>Help Page</h1>
-<p>Whenever you are struggling with answering CTF questions, please see this page.</p><br>
-<h2>Formatting</h2>
-- All flags will start with 'njccic' and be contained in curly brackets ('{ }') if not already<br>
-<h2>Cryptography</h2>
-<p>Some tools may be necessary to decode certain strings to find the flag. Below is a list of online tools that may help.<br>
-  - <a href="https://cryptii.com">Cryptii</a> - modular conversion, encoding and encryption online<br>
-  - <a href="https://gchq.github.io/CyberChef/">CyberChef</a> - encryption, encoding, compression and data analysis<br>
-  - <a href="https://www.dcode.fr/">dCode</a> (may need to translate from French) - online ciphers, solvers, decoders, calculators<br>
-  - <a href="https://quipquip.com">QuipQuip</a> - cryptoquip and cryptogram solver
-</p>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>
+        Register
+      </h1>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div>
+  
+
+  
+</div>
+
+        
+
+        
+
+          
+
+          <form method="post" accept-charset="utf-8" role="form">
+
+            <div class="mb-3">
+              <b><label class="form-label" for="name">User Name</label></b>
+              <input autocomplete="username" autofocus class="form-control" id="name" name="name" required type="text" value="">
+              <small class="form-text text-muted">
+                Your username on the site
+              </small>
+            </div>
+
+            <div class="mb-3">
+              <b><label class="form-label" for="email">Email</label></b>
+              <input autocomplete="email" class="form-control" id="email" name="email" required type="email" value="">
+              <small class="form-text text-muted">
+                Never shown to the public
+              </small>
+            </div>
+
+            <div class="mb-3">
+              <b><label class="form-label" for="password">Password</label></b>
+              <input autocomplete="new-password" class="form-control" id="password" name="password" required type="password" value="">
+              <small class="form-text text-muted">
+                Password used to log into your account
+              </small>
+            </div>
+
+            <input id="nonce" name="nonce" type="hidden" value="105d2ca40c1fd62750117c0c3fa8ac0f2a8cc6ccabd38ab89f7f24bd3df37f19">
+
+            
+
+            <div class="row pt-3">
+              <div class="col-6 col-md-4 offset-6 offset-md-8">
+                <input class="btn btn-block btn-primary w-100" id="_submit" name="_submit" type="submit" value="Submit">
+              </div>
+            </div>
+
+            
+          </form>
+        
+      </div>
+    </div>
   </div>
 
 </main>
