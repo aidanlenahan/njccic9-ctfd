@@ -1,0 +1,1 @@
+{"success": true, "data": [{"pos": 1, "account_id": 3, "account_url": "/users/3", "account_type": "user", "oauth_id": null, "name": "testuser", "score": 300, "bracket_id": null, "bracket_name": null}, {"pos": 2, "account_id": 4, "account_url": "/users/4", "account_type": "user", "oauth_id": null, "name": "slopey", "score": 80, "bracket_id": null, "bracket_name": null}]}
